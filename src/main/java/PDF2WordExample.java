@@ -38,7 +38,7 @@ public class PDF2WordExample {
             run.setText(text);
             run.addBreak(BreakType.PAGE);
         }
-        FileOutputStream out = new FileOutputStream("src/output/pdf.docx");
+        FileOutputStream out = new FileOutputStream("src/output/PDF2WordExample.docx");
         doc.write(out);
         out.close();
         reader.close();

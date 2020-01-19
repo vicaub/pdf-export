@@ -15,14 +15,14 @@ import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 
-public class MainClass {
+public class GeneratePDF {
 
     public static void main(String[] args) {
 
         try {
 
             Document document = new Document();
-            PdfWriter.getInstance(document, new FileOutputStream("iTextTable.pdf"));
+            PdfWriter.getInstance(document, new FileOutputStream("./src/output/GeneratedPDF.pdf"));
 
             document.open();
 

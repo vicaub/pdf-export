@@ -9,12 +9,12 @@ import org.apache.poi.xwpf.converter.pdf.PdfConverter;
 import org.apache.poi.xwpf.converter.pdf.PdfOptions;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
 
-public class TestCon {
+public class Word2PDF {
 
     public static void main(String[] args) {
-        TestCon cwoWord = new TestCon();
+        Word2PDF cwoWord = new Word2PDF();
         System.out.println("Start");
-        cwoWord.ConvertToPDF("D:\\Test.docx", "D:\\Test1.pdf");
+        cwoWord.ConvertToPDF("./src/main/resources/06_Annexe3CCTP_Exemple_DL_EAP.docx", "./src/output/Word2PDF.pdf");
     }
 
     public void ConvertToPDF(String docPath, String pdfPath) {
